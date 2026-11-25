@@ -9,7 +9,7 @@ fi
 git lfs install
 
 sudo apt-get update
-sudo apt-get install -y sl
+sudo apt-get install sl
 
 for shell_rc in "$HOME/.bashrc" "$HOME/.zshrc"; do
   if ! grep -Fqx 'export PATH=$PATH:/usr/games' "$shell_rc" 2>/dev/null; then
